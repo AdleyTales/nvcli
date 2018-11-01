@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "description": "Node cli toolkit",
   "bin": {
-    "nodecli": "./bin/index.js"
+    "nvcli": "bin/index.js"
   },
   "main": "bin/index.js",
   "scripts": {
+    "start": "node ./bin"
   },
   "keywords": [
     "node",
@@ -23,18 +24,8 @@
     "url": "https://github.com/bestvist/nvcli/issues"
   },
   "homepage": "https://github.com/bestvist/nvcli#readme",
-  "devDependencies": {
-    "bluebird": "^3.5.2",
-    "commander": "^2.19.0",
-    "iconv-lite": "^0.4.24",
-    "request": "^2.88.0"
-  },
   "dependencies": {
-    "chalk": "^2.4.1",
-    "download-git-repo": "^1.1.0",
-    "handlebars": "^4.0.12",
-    "inquirer": "^6.2.0",
-    "log-symbols": "^2.2.0",
+    "commander": "^2.19.0",
     "ora": "^3.0.0"
   }
 }
