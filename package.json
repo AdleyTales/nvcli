@@ -1,16 +1,28 @@
 {
-  "name": "{{name}}",
-  "version": "1.0.0",
-  "description": "{{description}}",
+  "name": "nvcli",
+  "version": "0.0.1",
+  "description": "Node cli toolkit",
   "bin": {
     "nodecli": "./bin/index.js"
   },
-  "main": "cli-choose.js",
+  "main": "bin/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "{{author}}",
-  "license": "ISC",
+  "keywords": [
+    "node",
+    "cli",
+    "toolkit"
+  ],
+  "author": "bestvist",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bestvist/nvcli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bestvist/nvcli/issues"
+  },
+  "homepage": "https://github.com/bestvist/nvcli#readme",
   "devDependencies": {
     "bluebird": "^3.5.2",
     "commander": "^2.19.0",
