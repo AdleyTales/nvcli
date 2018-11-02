@@ -13,25 +13,25 @@ npm install -g nvcli
 
 ## Usage
 
-* [x] 显示本地IP 
+### 显示本地IP 
 
 ```
 nvcli -i
 ```
 
-* [x] 压缩文件 
+### 压缩文件 
 
 ```
 nvcli -g input.txt,input.txt.gz
 ```
 
-* [x] 网址转二维码
+### 网址转二维码
 
 ```
 nvcli -q http://bestvist.com
 ```
 
-* [x] 浏览器打开网址
+### 浏览器打开网址
 
 ```
 nvcli -o http://bestvist.com
