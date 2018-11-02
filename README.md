@@ -32,3 +32,8 @@ nvcli -q http://bestvist.com
 ```
 nvcli -o http://bestvist.com
 ```
+
+有道翻译
+```
+nvcli -t awesome
+```

@@ -25,12 +25,12 @@ const options = [
     },
     {
         key: '-s, --search [keyword]',
-        desc: '浏览器打开网址 例: nvcli -s node',
+        desc: '浏览器打开网址 例: nvcli -s bestvist',
         action: require('../utils/search')
     },
     {
         key: '-t, --translate [keyword]',
-        desc: '有道翻译 例: nvcli -t node',
+        desc: '有道翻译 例: nvcli -t awesome',
         action: require('../utils/translate')
     },
 ]
