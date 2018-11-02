@@ -1,6 +1,6 @@
 {
   "name": "nvcli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node cli toolkit",
   "bin": {
     "nvcli": "bin/index.js"
@@ -24,8 +24,9 @@
     "url": "https://github.com/bestvist/nvcli/issues"
   },
   "homepage": "https://github.com/bestvist/nvcli#readme",
-  "dependencies": {
+  "devDependencies": {
     "commander": "^2.19.0",
-    "ora": "^3.0.0"
+    "ora": "^3.0.0",
+    "qrcode-terminal": "^0.12.0"
   }
 }
