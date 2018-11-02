@@ -24,9 +24,14 @@ const options = [
         action: require('../utils/open')
     },
     {
-        key: '-s, --search <keyword>',
+        key: '-s, --search [keyword]',
         desc: '浏览器打开网址 例: nvcli -s node',
         action: require('../utils/search')
+    },
+    {
+        key: '-t, --translate [keyword]',
+        desc: '有道翻译 例: nvcli -t node',
+        action: require('../utils/translate')
     },
 ]
 program.version('1.0.0', '-v, --version')
