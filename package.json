@@ -27,7 +27,7 @@
   "devDependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.19.0",
-    "http": "0.0.0",
+    "images": "^3.0.1",
     "opn": "^5.4.0",
     "ora": "^3.0.0",
     "public-ip": "^2.4.0",

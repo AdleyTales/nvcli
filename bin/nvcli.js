@@ -33,6 +33,11 @@ const options = [
         desc: '有道翻译 例: nvcli -t awesome',
         action: require('../utils/translate')
     },
+    {
+        key: '-w, --watermark <path>',
+        desc: '图片水印 例: nvcli -w demo.png',
+        action: require('../utils/img_watermark')
+    },
 ]
 program.version('1.0.0', '-v, --version')
     .usage('[options] <args>')
