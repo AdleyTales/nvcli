@@ -1,13 +1,13 @@
 {
   "name": "nvcli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Node cli toolkit",
   "bin": {
-    "nvcli": "bin/index.js"
+    "nvcli": "bin/nvcli.js"
   },
-  "main": "bin/index.js",
+  "main": "bin/nvcli.js",
   "scripts": {
-    "start": "node ./bin"
+    "start": "node ./bin/nvcli"
   },
   "keywords": [
     "node",
@@ -25,8 +25,13 @@
   },
   "homepage": "https://github.com/bestvist/nvcli#readme",
   "devDependencies": {
+    "chalk": "^2.4.1",
     "commander": "^2.19.0",
+    "opn": "^5.4.0",
     "ora": "^3.0.0",
-    "qrcode-terminal": "^0.12.0"
-  }
+    "public-ip": "^2.4.0",
+    "qrcode-terminal": "^0.12.0",
+    "wifi-password": "^3.0.1"
+  },
+  "dependencies": {}
 }
