@@ -2,8 +2,7 @@
 
 const program = require('commander');
 
-const options = [
-    {
+const options = [{
         key: '-i, --ip',
         desc: '显示本地IP 例子: nvcli -i',
         action: require('../utils/ip')
@@ -33,17 +32,40 @@ const options = [
         desc: '有道翻译 例: nvcli -t awesome',
         action: require('../utils/translate')
     },
+]
+
+const commands = [{
+        key: 'resize <path>',
+        desc: '设置图像的宽高 例: nvcli resize input.jpg --size 50,50',
+        option: {
+            key: '--size <w,h>',
+            desc: '图像的宽高'
+        },
+        action: require('../utils/img_resize')
+    },
     {
-        key: '-w, --watermark <path>',
-        desc: '图片水印 例: nvcli -w demo.png',
+        key: 'watermark <path>',
+        desc: '设置图片水印 例: nvcli watermark input.jpg --position 50,50',
+        option: {
+            key: '--position <x,y>',
+            desc: '图像的坐标'
+        },
         action: require('../utils/img_watermark')
     },
 ]
+
 program.version('1.0.0', '-v, --version')
     .usage('[options] <args>')
 
-options.map((opt) => {
+options.map(opt => {
     program.option(opt.key, opt.desc, opt.action)
+})
+
+commands.map(cmd => {
+    program.command(cmd.key)
+        .description(cmd.desc)
+        .option(cmd.option.key, cmd.option.desc)
+        .action(cmd.action)
 })
 
 program.parse(process.argv);

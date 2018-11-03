@@ -37,3 +37,19 @@ nvcli -o http://bestvist.com
 ```
 nvcli -t awesome
 ```
+
+设置图片宽高
+> --size width,height  图片的宽高 
+
+```
+nvcli resize input.jpg --size 50
+或
+nvcli resize input.jpg --size 50,50
+```
+
+图片加水印
+> --position x,y 水印图片位置
+
+```
+nvcli watermark demo.png,watermark.png --position 50,50
+```
