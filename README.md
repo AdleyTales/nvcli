@@ -5,13 +5,13 @@
 
 > node cli toolkit.
 
-## Install
+## 全局安装 Install
 
 ```
 npm install -g nvcli
 ```
 
-## Usage
+## 使用 Usage
 
 显示本地IP 
 ```
