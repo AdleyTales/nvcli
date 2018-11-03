@@ -37,6 +37,11 @@ const options = [{
         desc: '有道翻译 例: nvcli --translate awesome',
         action: require('../utils/translate')
     },
+    {
+        key: '-j, --js2json <path>',
+        desc: 'js转json 例: nvcli --js2json e:\\demo.js',
+        action: require('../utils/js2json')
+    },
 ]
 
 const commands = [{

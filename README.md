@@ -13,7 +13,7 @@ npm install -g nvcli
 
 ## 使用 Usage
 
-** 显示本地IP **
+**显示本地IP**
 ```
 nvcli --ip
 ```
@@ -48,6 +48,16 @@ nvcli --search bestvist
 **有道翻译**
 ```
 nvcli --translate awesome
+```
+
+**JS转JSON**
+```
+nvcli --js2json e:\demo.js
+
+// demo.js
+module.exports = {
+    name: 'hello world'
+}
 ```
 
 **改变图片宽高**

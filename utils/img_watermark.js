@@ -12,10 +12,13 @@ const fn = function (path, options) {
 
     const name = path[0].split('/').pop().split('.');
     const position = (options.position || '').split(',') || [];
+    const result = `${name[0]}_watermark.${name[1]}`;
 
     images(path[0])
         .draw(images(path[1]), +(position[0] || 0), +(position[1] || 0))
-        .save(`${name[0]}_watermark.${name[1]}`)
+        .save(result);
+
+    log(chakl.green(`水印图：${result}`))
 }
 
 module.exports = fn;
