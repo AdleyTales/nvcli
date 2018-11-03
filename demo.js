@@ -1,1 +1,0 @@
-module.exports = {name: 'hi',age: '25',arr:[1,2,3]}

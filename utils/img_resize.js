@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const log = console.log;
 
 const fn = function (path, options) {
-    const name = path.split('/').pop().split('.');
+    const name = path.split('\\').pop().split('.');
     const size = (options.size || '').split(',') || [];
     const sizeStr = size[0] + (size[1] ? 'x' + size[1] : '') + '';
     const result = `${name[0]}_${sizeStr}.${name[1]}`;

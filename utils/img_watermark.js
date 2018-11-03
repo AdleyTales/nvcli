@@ -10,7 +10,7 @@ const fn = function (path, options) {
         return
     };
 
-    const name = path[0].split('/').pop().split('.');
+    const name = path[0].split('\\').pop().split('.');
     const position = (options.position || '').split(',') || [];
     const result = `${name[0]}_watermark.${name[1]}`;
 
