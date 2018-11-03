@@ -20,7 +20,7 @@ nvcli --ip
 
 查询IP位置 
 ```
-nvcli --ipp 
+nvcli --ipp 223.202.204.194
 ```
 
 压缩文件 

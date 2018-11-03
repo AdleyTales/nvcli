@@ -9,7 +9,7 @@ const options = [{
     },
     {
         key: '-p, --ipp [ip]',
-        desc: '查询IP位置 例子: nvcli --ipp ',
+        desc: '查询IP位置 例子: nvcli --ipp 223.202.204.194',
         action: require('../utils/ip_position')
     },
     {

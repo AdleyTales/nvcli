@@ -1,6 +1,6 @@
 {
   "name": "nvcli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Node cli toolkit",
   "bin": {
     "nvcli": "bin/nvcli.js"
