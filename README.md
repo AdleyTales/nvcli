@@ -15,30 +15,42 @@ npm install -g nvcli
 
 显示本地IP 
 ```
-nvcli -i
+nvcli --ip
+```
+
+查询IP位置 
+```
+nvcli --ipp 
 ```
 
 压缩文件 
 ```
-nvcli -g input.txt,input.txt.gz
+nvcli --gzip input.txt,input.txt.gz
 ```
 
 网址转二维码
 ```
-nvcli -q http://bestvist.com
+nvcli --qrcode http://bestvist.com
 ```
 
-浏览器打开网址
+打开文件或网址
 ```
-nvcli -o http://bestvist.com
+nvcli --open http://bestvist.com
+或
+nvcli --open demo.txt
+```
+
+百度搜索
+```
+nvcli --search bestvist
 ```
 
 有道翻译
 ```
-nvcli -t awesome
+nvcli --translate awesome
 ```
 
-设置图片宽高
+改变图片宽高
 > --size width,height  图片的宽高 
 
 ```

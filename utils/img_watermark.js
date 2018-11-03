@@ -1,11 +1,12 @@
 const images = require('images');
 const chalk = require('chalk');
+const log = console.log;
 
-module.exports = function (path, options) {
+const fn = function (path, options) {
     path = path.split(',');
 
     if (!path[1]) {
-        console.log(chalk.red('缺少水印图片!'));
+        log(chalk.red('缺少水印图片!'));
         return
     };
 
@@ -16,3 +17,5 @@ module.exports = function (path, options) {
         .draw(images(path[1]), +(position[0] || 0), +(position[1] || 0))
         .save(`${name[0]}_watermark.${name[1]}`)
 }
+
+module.exports = fn;

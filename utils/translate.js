@@ -1,5 +1,6 @@
 const http = require('http');
 const chalk = require('chalk');
+const log = console.log;
 
 function parseRequest(data) {
     data = JSON.parse(data);
@@ -21,10 +22,10 @@ function parseRequest(data) {
 
     const result = `\n${chalk.magentaBright('发音: '+pron)}\n\n${chalk.greenBright('翻译：'+ trans)}\n\n${chalk.blueBright('网络释义：'+para)}`;
 
-    console.log(result);
+    log(result);
 }
 
-function query(keyword) {
+const fn = function(keyword) {
     const options = {
         host: 'fanyi.youdao.com',
         port: '80',
@@ -41,4 +42,4 @@ function query(keyword) {
     req.end();
 }
 
-module.exports = query;
+module.exports = fn;

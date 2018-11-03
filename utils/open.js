@@ -1,5 +1,7 @@
 const opn = require('opn');
 
-module.exports = function (url) {
+const fn = function (url) {
     opn(url);
 }
+
+module.exports = fn;

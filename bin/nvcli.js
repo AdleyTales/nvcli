@@ -3,40 +3,45 @@
 const program = require('commander');
 
 const options = [{
-        key: '-i, --ip',
-        desc: '显示本地IP 例子: nvcli -i',
+        key: '--ip',
+        desc: '显示本地IP 例子: nvcli --ip',
         action: require('../utils/ip')
     },
     {
+        key: '-p, --ipp [ip]',
+        desc: '查询IP位置 例子: nvcli --ipp ',
+        action: require('../utils/ip_position')
+    },
+    {
         key: '-g, --gzip <path>',
-        desc: '压缩文件 例: nvcli -g input.txt,input.txt.gz',
+        desc: '压缩文件 例: nvcli --gzip input.txt,input.txt.gz',
         action: require('../utils/gzip')
     },
     {
         key: '-q, --qrcode <url>',
-        desc: '网址转二维码 例: nvcli -q http://bestvist.com',
+        desc: '网址转二维码 例: nvcli --qrcode http://bestvist.com',
         action: require('../utils/url2qrcode')
     },
     {
         key: '-o, --open <url>',
-        desc: '浏览器打开网址 例: nvcli -o http://bestvist.com',
+        desc: '打开文件或网址 例: nvcli --open http://bestvist.com',
         action: require('../utils/open')
     },
     {
         key: '-s, --search [keyword]',
-        desc: '浏览器打开网址 例: nvcli -s bestvist',
+        desc: '百度搜索 例: nvcli --search bestvist',
         action: require('../utils/search')
     },
     {
         key: '-t, --translate [keyword]',
-        desc: '有道翻译 例: nvcli -t awesome',
+        desc: '有道翻译 例: nvcli --translate awesome',
         action: require('../utils/translate')
     },
 ]
 
 const commands = [{
         key: 'resize <path>',
-        desc: '设置图像的宽高 例: nvcli resize input.jpg --size 50,50',
+        desc: '改变图像的宽高 例: nvcli resize input.jpg --size 50,50',
         option: {
             key: '--size <w,h>',
             desc: '图像的宽高'

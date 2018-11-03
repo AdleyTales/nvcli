@@ -1,6 +1,6 @@
 const images = require('images');
 
-module.exports = function (path, options) {
+const fn = function (path, options) {
     const name = path.split('/').pop().split('.');
     const size = (options.size || '').split(',') || [];
     const sizeStr = size[0] + (size[1] ? 'x' + size[1] : '') + '';
@@ -8,3 +8,5 @@ module.exports = function (path, options) {
         .size(+size[0], size[1] ? +size[1] : undefined)
         .save(`${name[0]}_${sizeStr}.${name[1]}`)
 }
+
+module.exports = fn;

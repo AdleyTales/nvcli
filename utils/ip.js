@@ -1,8 +1,11 @@
 const publicIp = require('public-ip');
 const chalk = require('chalk');
+const log = console.log;
 
-module.exports = function () {
+const fn = function () {
     publicIp.v4().then(ip => {
-        console.log(chalk.blue(ip));
+        log(chalk.blue(ip));
     })
 }
+
+module.exports = fn;

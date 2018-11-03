@@ -2,7 +2,7 @@ const zlib = require('zlib');
 const gzip = zlib.createGzip();
 const fs = require('fs');
 
-module.exports = function (path) {
+const fn = function (path) {
     path = path.split(',');
     const input = path[0].trim();
     const output = path[1].trim();
@@ -10,3 +10,5 @@ module.exports = function (path) {
     const outStream = fs.createWriteStream(output);
     inputStream.pipe(gzip).pipe(outStream);
 };
+
+module.exports = fn;

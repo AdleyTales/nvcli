@@ -1,5 +1,7 @@
 const opn = require('opn');
 
-module.exports = function (val){
+const fn = function (val){
     opn(`https://www.baidu.com/s?wd=${val}`);
 }
+
+module.exports = fn;
