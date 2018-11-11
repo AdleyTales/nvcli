@@ -24,7 +24,7 @@
     "url": "https://github.com/bestvist/nvcli/issues"
   },
   "homepage": "https://github.com/bestvist/nvcli#readme",
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.19.0",
     "geoip-lite": "^1.3.2",
@@ -35,6 +35,5 @@
     "ora": "^3.0.0",
     "public-ip": "^2.4.0",
     "qrcode-terminal": "^0.12.0"
-  },
-  "dependencies": {}
+  }
 }
