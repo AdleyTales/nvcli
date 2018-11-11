@@ -1,21 +1,16 @@
-const http = require('http');
+const http = require('request');
 
 const fn = function (text) {
-    const options = {
-        host: 'emoji.getdango.com',
-        port: '80',
-        path: '/api/emoji',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
+    http(`http://emoji.getdango.com/api/emoji?q=${text}`, function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            const res = JSON.parse(body).results;
+            let str = '';
+            res.map(emoji=>{
+                str += emoji.text + ' ';
+            })
+            console.log(str);
         }
-    }
-    const req = http.request(options, function (response) {
-        response.on('data', function (data) {
-            console.log(data)
-        })
-        response.on('end', function () {});
     })
-    req.end();
 }
 
 module.exports = fn;

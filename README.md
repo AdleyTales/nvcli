@@ -60,6 +60,11 @@ module.exports = {
 }
 ```
 
+**查询emoji表情**
+```
+nvcli --emoji smile
+```
+
 **改变图片宽高**
 > --size width,height  图片的宽高 
 

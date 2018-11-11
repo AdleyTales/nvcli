@@ -1,6 +1,6 @@
 {
   "name": "nvcli",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Node cli toolkit",
   "bin": {
     "nvcli": "bin/nvcli.js"
@@ -34,6 +34,7 @@
     "opn": "^5.4.0",
     "ora": "^3.0.0",
     "public-ip": "^2.4.0",
-    "qrcode-terminal": "^0.12.0"
+    "qrcode-terminal": "^0.12.0",
+    "request": "^2.88.0"
   }
 }
