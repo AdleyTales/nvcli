@@ -42,6 +42,11 @@ const options = [{
         desc: 'js转json 例: nvcli --js2json e:\\demo.js',
         action: require('../utils/js2json')
     },
+    {
+        key: '-e, --emoji [keyword]',
+        desc: '查询emoji表情 例: nvcli --emoji smile',
+        action: require('../utils/emoji')
+    },
 ]
 
 const commands = [{
